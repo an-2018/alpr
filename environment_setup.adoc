@@ -1,0 +1,80 @@
+= Automatic License Plate Recognition Demo
+
+A sample of a ALPR using OpenCV, Python, Tesseract and PyTesseract
+
+== Installation (ubuntu)
+=== Setting up the enviroment
+
+.Opencv
+Pip and OpenCV installation with virtual environment
+[source, bash]
+----
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install python3-dev
+
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py
+----
+
+Install virtual environment
+[source, bash]
+----
+pip install virtualenv virtualenvwrapper
+----
+
+Configure virtual env shortcuts in bashrc file
+ 
+ nano ~/.bashrc
+ 
+----
+# virtualenv and virtualenvwrapper
+export WORKON_HOME=$HOME/.local/bin/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.local/bin/virtualenv
+source $HOME/.local/bin/virtualenvwrapper.sh
+----
+
+New commands configured for **create, activate, deactivate** the virtual env
+
+- create `mkvirtualenv`
+
+- activate `workon`
+
+- deactivate `deactivate`
+
+- remove `rmvirtualenv`
+
+Create a env
+ 
+ mkvirtualenv cv -p python3
+ 
+Install OpenCV
+ 
+ pip install opencv-contrib-python
+ 
+
+ source ~/.bashrc
+
+== Test Run the OpenCV Installation
+ workon cv
+ 
+ pip install imutils
+ 
+Test installation
+----
+ python
+ import cv2
+ cv2.__version__
+ import imutils
+----
+
+Downlowd source code and execute
+----
+python real_time_object_detection.py \
+    --prototxt MobileNetSSD_deploy.prototxt.txt \
+	--model MobileNetSSD_deploy.caffemodel
+----
+== Reference
+https://www.pyimagesearch.com/2020/09/21/opencv-automatic-license-number-plate-recognition-anpr-with-python/

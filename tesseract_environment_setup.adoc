@@ -1,0 +1,43 @@
+= Tesseract environment setup
+:imagesdir: img
+
+== Install Tesseract 4 on Ubuntu
+
+Check ubuntu version for tesseract installation
+ 
+ lsb_release -a
+
+For ubuntu 18.04
+----
+sudo apt install tesseract-ocr
+
+tesseract -v
+----
+
+=== Install tesseract + python bindings
+
+To enable python to comunicate with tesseract to make OCR from images found with OpenCV
+
+----
+
+workon {venv-name}
+
+# Pillow light version of PIL - python Image Library
+pip install pillow
+
+pip install pytesseract
+
+pip install imutils
+----
+
+Test installation
+
+----
+python
+import cv2
+import pytesseract
+import imutils
+----
+
+== References
+https://www.pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/

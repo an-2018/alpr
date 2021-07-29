@@ -1,0 +1,18 @@
+= Automatic License Plate Recognition Demo
+ 
+A sample of a ALPR using OpenCV, Python, Tesseract and PyTesseract.
+
+OpenCV used to detect text ROI on images and pass then to Tessseract wich can perform text recognition based on deep learning-based model.
+
+== OCR (optical caracter regogniiton) Environment
+
+----
+workon {alpr_env}
+pip install imutils
+pip install scikit-image
+----
+
+== References
+
+Tessaract env setup
+https://www.pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/
