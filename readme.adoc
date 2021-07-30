@@ -12,6 +12,10 @@ pip install imutils
 pip install scikit-image
 ----
 
+== Test Run
+----
+python ocr_license_plate.py --input license_plates/group1 --clear-border 1
+----
 == Why haven’t we applied deep learning object detection to find the license plate? Wouldn’t that be easier?”
 [quote]
 While that is perfectly acceptable, it is a lot of work to train such an object detector on your own. We’re talking requires countless hours to annotate thousands of images in your dataset.
