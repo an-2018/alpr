@@ -1,4 +1,4 @@
-# ALPR - Automatic License Plate Recognition
+# ALPR Project - Automatic License Plate Recognition
 
 ## Steps
 - Detect the ROI(Region of Interest) by using a ML models  - *YOLO* so far
@@ -11,6 +11,9 @@ Machine Learning aproachs
   - https://towardsdatascience.com/i-built-a-diy-license-plate-reader-with-a-raspberry-pi-and-machine-learning-7e428d3c7401
 
 YOLO
+YOLOv4 in the CLoud
+- https://youtu.be/mKAEGSxwOAY
+
 Original Project by Joseph Redmon
 - https://pjreddie.com/darknet/yolo/
 
