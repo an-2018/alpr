@@ -13,6 +13,7 @@ Custom dataset training YOLO_v4 - Colab (Cloud)
 
 YOLOv4 Tutorial #1 - Installation in 10 Steps - (Locally)
 - https://www.youtube.com/watch?v=5pYh1rFnNZs
+
 YOLOv4 Tutorial #2 - How to Run YOLOv4 on Images and video
 - https://www.youtube.com/watch?v=sUxAVpzZ8hU
 
